@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicação DevOps</title>
+</head>
+<body>
+  <h1>Bem-vindo à aplicação DevOps 🚀</h1>
+
+  <p>Integrantes do grupo:</p>
+  <button onclick="buscarIntegrantes()">Carregar</button>
+
+  <ul id="lista"></ul>
+
+  <script>
+    async function buscarIntegrantes() {
+      const res = await fetch('/integrantes')
+      const data = await res.json()
+
+      const lista = document.getElementById('lista')
+      lista.innerHTML = ''
+
+      data.integrantes.forEach(i => {
+        const li = document.createElement('li')
+        li.textContent = i.nome
+        lista.appendChild(li)
+      })
+    }
+  </script>
+</body>
+</html>
