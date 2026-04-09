@@ -1,13 +1,12 @@
-# Project Title
-A short, concise description of what this project does and why it exists.
+# N1
 
-## Description
-An in-depth paragraph explaining the project, its core functionality, and the problem it solves.
+Projeto simples desenvolvido para integrar uma interface frontend em **HTML** com um servidor backend em **Node.js**.
 
-## Getting Started
-### Dependencies
-* OS: Windows 10, Linux, macOS
-* Language: Node.js
+## 🚀 Tecnologias
+* HTML5
+* Node.js
 
-
-
+## 🔧 Como executar
+1. Clone este repositório:
+   ```bash
+   git clone [https://github.com/seu-usuario/n1.git](https://github.com/seu-usuario/n1.git)
